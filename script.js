@@ -63,11 +63,3 @@ let checkScore = function () {
     highestScore.innerHTML = originalHighestScore;
   }
 };
-
-// A guessing game that generates a random number (1-10)
-// We make a guess as to what the number possibly is and enter it into the input
-// If we guess that number incorrectly, we lose an attempt
-// Whether or not we guessed too high or too low will reflect on the page
-// If we guess the correct number, we'll display "correct number!" and our score will increase by one
-// There's an "Again" Button that we can click to restart the entire game, except for the score
-// If we run out of attempts, we lose the game

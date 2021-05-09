@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!--  Retro Game Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Number Guessing Game</title>
+  </head>
+  <body>
+    <section class="game">
+
+        <!--  Header -->
+      <header class="heading">
+        <button class="replay">Again!</button>
+        <p class="heading-paragraph">Between 1 and 10</p>
+        <h1>Guess My Number!</h1>
+      </header>
+
+      <!--  Main -->
+      <main class="main">
+        <div class="border-line"></div>
+        <div class="main-box"><p class="whats-the-number">??</p></div>
+        <div class="input-statistics">
+            <p class="guessing">Start guessing...</p>
+          <input class="input" type="number" />
+          <button class="check-answer">Check!</button>
+
+          <div class="scores">
+            <p class="score">&#128126; Attempts: <span class="attempts">10</span></p>
+            <p>&#128640; High Score: <span class="high-score">0</span></p>
+          </div>
+        </div>
+      </main>
+
+    </section>
+    <script src="/script.js"></script>
+  </body>
+</html>

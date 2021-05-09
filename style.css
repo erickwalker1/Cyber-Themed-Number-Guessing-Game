@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  min-height: 100vh;
+  font-size: 0.75rem;
+  font-family: "Press Start 2P", cursive;
+  background-color: black;
+}
+
+.game {
+  min-height: 100vh;
+}
+
+button {
+  font-family: "Press Start 2P", cursive;
+}
+
+/* ------ Heading ------ */
+
+header {
+  margin: 1rem 0 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 20vh;
+}
+
+.heading-paragraph {
+  top: .5rem;
+  left: 15%;
+  position: relative;
+}
+
+h1 {
+  top: 5%;
+  margin: 0 auto;
+  position: relative;
+  font-size: 1.4rem;
+}
+
+.replay {
+  width: 100px;
+  height: 30px;
+  color: black;
+  border: none;
+  background-color: white;
+}
+
+/* ------ Main ------ */
+
+main {
+  margin-top: 2rem;
+}
+
+.main-box {
+  color: black;
+  width: 100px;
+  height: 70px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5rem;
+  background-color: white;
+}
+
+.border-line {
+  top: 2.5rem;
+  width: 100%;
+  height: 4px;
+  position: relative;
+  background-color: white;
+}
+
+.whats-the-number {
+  top: 1.25rem;
+  position: relative;
+  font-size: 2rem;
+}
+
+.input-statistics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 0.5rem;
+  flex-direction: column;
+}
+
+.guessing {
+  display: block;
+  font-size: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  color: white;
+  height: 70px;
+  border: 2px solid white;
+  text-align: center;
+  background-color: black;
+}
+
+input[type="number"] {
+  font-size: 1rem;
+  font-family: "Press Start 2P", cursive;
+}
+
+.check-answer {
+  width: 110px;
+  height: 50px;
+  color: black;
+  border: none;
+  display: block;
+  margin: 1rem 0;
+  background-color: white;
+}
+
+.scores {
+  font-size: 0.7rem;
+  margin-top: 1rem;
+}
+
+/*  #f7ecce; retro grade yello white */

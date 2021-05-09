@@ -18,14 +18,17 @@ let originalHighestScore = highestScore.innerHTML;
 checkAnswerButton.addEventListener("click", function (event) {
   let randomNumber = Math.floor(Math.random() * 11);
   /*  <!--  If input value matches random number, number is reflected in box and 'correct' is shown on page  -->   */
-  if (Number(inputBox.value) === randomNumber) {
+  if (Number(inputBox.value) === randomNumber && Number(inputBox.value) <= 10) {
     magicNumber.innerHTML = randomNumber;
     result.innerHTML = `&#9989; Correct Number!`;
 
     updatedHighScore();
     console.log(`You Win!`);
-  } else {
-    /*  <!--  If input value != random number, result is shown on page & attempts decrease -->   */
+  } else if (
+  /*  <!--  If input value != random number, result is shown on page & attempts decrease -->   */
+    Number(inputBox.value) !== randomNumber &&
+    Number(inputBox.value) <= 10
+  ) {
     if (Number(inputBox.value) > randomNumber) {
       result.innerHTML = `❌ Too High!`;
     } else if (Number(inputBox.value) < randomNumber) {
@@ -34,6 +37,8 @@ checkAnswerButton.addEventListener("click", function (event) {
     let newAttempt = Number(attempts.innerHTML) - 1;
     attempts.innerHTML = newAttempt;
     console.log(`Wrong Number! Try Again!`);
+  } else {
+    numberGuess();
   }
   checkScore();
   console.log(randomNumber);
@@ -61,5 +66,12 @@ let checkScore = function () {
   if (Number(attempts.innerHTML) === 0) {
     result.innerHTML = `Game Over! Out Of Attempts!`;
     highestScore.innerHTML = originalHighestScore;
+  }
+};
+
+/*  <!--  If the input value is higher than 10, alert user and tell them guess a number 0-10 -->   */
+let numberGuess = function () {
+  if (Number(inputBox.value) > 10) {
+    result.innerHTML = `Choose A Number Between 0 And 10!`;
   }
 };
